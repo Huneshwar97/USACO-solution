@@ -15,7 +15,7 @@ void dfs(int node,bool g=0){
     group[node]=g;
     for(auto x:adj[node]){
         if(vis[x]){
-            if(group[x]==g)
+            if(group[x]==g)//IF both same colour
 				bad=1;
         }
         else{
